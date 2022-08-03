@@ -1,6 +1,9 @@
 let rnumber = Math.trunc(Math.random() * 30) + 1;
 let score = 30;
 let highscore = 0;
+
+/*match the user guess with generated number*/
+
 document.querySelector('.check').addEventListener('click', function () {
     const guess = Number(document.querySelector('.guess').value);
     if (!guess) {
@@ -40,6 +43,7 @@ document.querySelector('.check').addEventListener('click', function () {
     }
 })
 
+/*reset the canvas for a new game*/
 
 document.querySelector('.again').addEventListener('click', function () {
     score = 30;
